@@ -6,6 +6,6 @@ Contributors:
 
 Chad Derrick - https://github.com/CDerrick0426
 Denah Thach - https://github.com/DeThach
-Nicholas Day - (I'll add the link when I recieve it)
+Nicholas Day - https://github.com/Nickday30
 
 A calculator that converts between Fahrenheit and Celsius, and displays information like weather.
