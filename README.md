@@ -9,3 +9,10 @@ Denah Thach - https://github.com/DeThach
 Nicholas Day - https://github.com/Nickday30
 
 A calculator that converts between Fahrenheit and Celsius, and displays information like weather.
+
+Classes: 
+
+GUI (Collaboration between all)
+Celcius and Fahrenheit Conversion: Chad
+Random Weather/Precip. Generation: Denah
+Recommended Clothing: Nicholas
