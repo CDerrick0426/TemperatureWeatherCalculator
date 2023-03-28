@@ -1,0 +1,22 @@
+//Clothing suggestion general outline
+ if temperature >= 60
+ {
+    coat = null;
+    bottoms = shorts;
+    tops = tshirt;
+ }
+ if temperature < 60 && temperature > 32
+ {
+    coat = lightCoat;
+    bottoms = pants;
+    tops = tshirt;
+ }
+ else
+ {
+    coat = heavyCoat;
+    bottoms = pants;
+    tops = sweatshirt;
+ }
+ //Add in options for precipation (snow or rain), wind, and sunshine
+ //class information
+ //shoes and hats?
