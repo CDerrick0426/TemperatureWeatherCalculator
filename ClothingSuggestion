@@ -1,188 +1,54 @@
 
-public class decide {
-	int temp;
-	int weather;
-	{
-		if (temp <= 32) {
-			if (weather == 1) {
-				snowing();
-			} else if (weather == 2) {
-				coldCloudy();
-			} else if (weather == 3) {
-				coldWind();
-			} else {
-				coldClear();
-			}
-		}
-		
-		else if ((temp > 32) && (temp <= 50)) {
-			if (weather == 1) {
-				coldRain();
-			} else if (weather == 2) {
-				chillyCloudy();
-			} else if (weather == 3) {
-				chillyWind();
-			} else {
-				chillyClear();
-			}
-		} 
-		
-		else if ((temp > 50) && (temp <= 75)) {
-			if (weather == 1) {
-				warmRain();
-			} else if (weather == 2) {
-				warmCloudy();
-			} else if (weather == 3) {
-				warmWind();
-			} else {
-				warmClear();
-			}
-		}
+import java.util.*;
 
-		else if ((temp > 75)) {
-			if (weather == 1) {
-				hotRain();
-			} else if (weather == 2) {
-				hotCloudy();
-			} else if (weather == 3) {
-				hotWind();
-			} else {
-				hotClear();
-			}
-		}
-	}
-	
-public class clothes {
-	int top; 
-	int bottoms;
-	int shoes;
-	
-	switch (top) {
-	case 1:{
-		System.out.println("heavy coat");
-		break;
-	case 2:
-		top = 2;
-		System.out.println("light jacket");
-		break;
-	case 3 :
-		System.out.println("long sleeve shirt");
-		break;
-	default:
-		System.out.println("t shirt");
-		break;
-		}
-	}
-	switch (bottoms) {
-	case 1:{
-		System.out.println("pants");
-		break;
-	case 2:
-		System.out.println("pants");
-		break;
-	case 3 :
-		System.out.println("light pants");
-		break;
-	default:
-		System.out.println("shorts");
-		break;
-		}
-	}
-	switch (shoes) {
-	case 1:{
-		System.out.println("boots");
-		break;
-	case 2:
-		System.out.println("tennis shoes");
-		break;
-	case 3 :
-		System.out.println("tennis shoes");
-		break;
-	default:
-		System.out.println("flip flops");
-		break;
-		}
-	}
+public class ClothingSuggestion {
+    public static void main(String[] args) {
+        String[] weatherConditions = {"sunny", "cloudy", "rainy", "windy", "snowy"};
+        String[] sunnyClothing = {"t-shirt", "shorts", "sunglasses", "flip flops"};
+        String[] cloudyClothing = {"light jacket", "jeans", "sneakers"};
+        String[] rainyClothing = {"raincoat", "umbrella", "boots"};
+        String[] windyClothing = {"windbreaker", "long pants", "sneakers"};
+        String[] snowyClothing = {"heavy jacket", "snow boots", "hat", "gloves"};
+
+        Random rand = new Random();
+        int weatherIndex = rand.nextInt(weatherConditions.length);
+        String currentWeather = weatherConditions[weatherIndex];
+        int currentTemp = rand.nextInt(100); 
+        ArrayList<String> suggestedClothing = new ArrayList<String>();
+
+        if (currentTemp <= 32) {
+            suggestedClothing.addAll(Arrays.asList(snowyClothing));
+        } else if (currentTemp <= 50) {
+            suggestedClothing.addAll(Arrays.asList(snowyClothing));
+            suggestedClothing.add("scarf");
+        } else if (currentTemp <= 75) {
+            switch (currentWeather) {
+                case "sunny":
+                    suggestedClothing.addAll(Arrays.asList(sunnyClothing));
+                    break;
+                case "cloudy":
+                    suggestedClothing.addAll(Arrays.asList(cloudyClothing));
+                    break;
+                case "rainy":
+                    suggestedClothing.addAll(Arrays.asList(rainyClothing));
+                    break;
+                case "windy":
+                    suggestedClothing.addAll(Arrays.asList(windyClothing));
+                    break;
+                case "snowy":
+                    suggestedClothing.addAll(Arrays.asList(snowyClothing));
+                    break;
+            }
+        } else if (currentTemp <= 100) {
+            suggestedClothing.addAll(Arrays.asList(sunnyClothing));
+            suggestedClothing.add("ballcap");
+        } else {
+            suggestedClothing.addAll(Arrays.asList(sunnyClothing));
+            suggestedClothing.add("shorts");
+        }
+
+        System.out.println("The current weather is " + currentWeather + " and the temperature is " + currentTemp + "°F.");
+        System.out.println(suggestedClothing);
+    }
 }
-	private  void snowing() {
-		top = 1;
-		bottom = 1;
-		shoes = 1;
-	}
 
-	private void hotClear() {
-		top = 2;
-		bottom = 1;
-		shoes = 1;
-	}
-
-	private void hotWind() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void hotCloudy() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void hotRain() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void warmClear() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void warmWind() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void warmCloudy() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void warmRain() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void chillyClear() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void chillyWind() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void chillyCloudy() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void coldRain() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void coldClear() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void coldWind() {
-		// TODO Auto-generated method stub
-
-	}
-
-	private void coldCloudy() {
-		// TODO Auto-generated method stub
-
-	}
-}
