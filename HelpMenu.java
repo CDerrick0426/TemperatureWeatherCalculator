@@ -128,7 +128,8 @@ public class HelpMenu extends javax.swing.JFrame {
                 + "allowing the user to randomly generate clothing based on temperature and weather.\n\n"
         +"Special cases for temperature and weather exist, such as no snow above a certain temperature.\n\n"
         +"Hopefully this window allows you to better understand this aspect of the program!\n\n"
-        + "This section is coded by Nicholas Day.");
+        + "This section is coded by Nicholas Day.\n\n\"
+        + "NOTE: Temperature is displayed in Fahrenheit.");
     }                                        
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -137,7 +138,8 @@ public class HelpMenu extends javax.swing.JFrame {
         +"The temperature and weather are randomly generated and output.\n\n"
         +"Snow only generates 32 degrees or under, due to how this is programmed.\n\n"
         +"Hopefully this window allows you to better understand this aspect of the program!\n\n"
-        + "This section is coded by Denah Thach.");
+        + "This section is coded by Denah Thach.\n\n"
+        + "NOTE: Temperature is displayed in Fahrenheit.");
     }                                        
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
