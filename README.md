@@ -23,6 +23,8 @@ Random Weather Generator (WeatherMenu.java): Denah Thach, GUI: Chad Derrick
 Workload/Communication:
 Workload in this project was fairly balanced between all three members. Each developed a full class, and Chad worked on the GUI as well as it was an easy task and allowed for a more consistent, albiet basic, design. Help menu was collaborated between all three to allow for better descriptions of each function. Communication was key and everyone communicated very well. Overall, a great group to work with.
 
+Apache Netbeans was used to create and test the UI.
+
 Updated 4/30/2022
 
 NOTE: All temperatures on ClothingMenu and WeatherMenu are in Fahrenheit.
