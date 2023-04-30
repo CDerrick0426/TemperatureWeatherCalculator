@@ -1,8 +1,7 @@
-/*
-Denah Thach 
-Group Project - C211 Problem Solving and Programming II
-4/29/2023
-*/
+//Team 7 Temperature Weather Calculator
+//Members: Denah Thach, Nicholas Day and Chad Derrick
+// Programmer for this file: Denah Thach
+
 package SP23Final;
 import java.util.Random;
 
