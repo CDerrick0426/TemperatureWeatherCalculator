@@ -1,6 +1,8 @@
 # TemperatureWeatherCalculator
 
-This is a calculator that, when given a Fahrenheit or Celsius input, will convert it to the other. It will also display a (randomly generated) value for precipitation and weather (cloudy, rain, clear, etc.), and it will finish by displaying a recommended clothing set (For example, if it's cold and rainy it will suggest a hoodie and umbrella)
+This is a calculator that, when given a Fahrenheit or Celsius input, will convert it to the other. It also has functions to give a random weather and random temperature, as well as a function to generate a random clothing suggestion based off of the weather and temperature (For example, snow needs a heavy jacket due to the cold, rain needs a jacket, etc.)
+
+A help menu is also accessible and gives information about each of these.
 
 Contributors:
 
@@ -12,7 +14,15 @@ A calculator that converts between Fahrenheit and Celsius, and displays informat
 
 Classes: 
 
-GUI (Collaboration between all)
-Celcius and Fahrenheit Conversion: Chad
-Random Weather/Precip. Generation: Denah
-Recommended Clothing: Nicholas
+Main Screen GUI (CalculatorGUI.java): Chad Derrick
+Temperature Conversion (TemperatureMenu.java): Chad Derrick
+Help Menu (HelpMenu.GUI): Chad, Denah and Nicholas
+Random Clothing Suggestor (ClothingMenu.java): Nicholas Day, GUI: Chad Derrick
+Random Weather Generator (WeatherMenu.java): Denah Thach, GUI: Chad Derrick
+
+Workload/Communication:
+Workload in this project was fairly balanced between all three members. Each developed a full class, and Chad worked on the GUI as well as it was an easy task and allowed for a more consistent, albiet basic, design. Help menu was collaborated between all three to allow for better descriptions of each function. Communication was key and everyone communicated very well. Overall, a great group to work with.
+
+Updated 4/30/2022
+
+NOTE: All temperatures on ClothingMenu and WeatherMenu are in Fahrenheit.
