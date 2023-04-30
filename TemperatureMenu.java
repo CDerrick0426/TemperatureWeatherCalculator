@@ -1,4 +1,6 @@
-//Chad Derrick
+//Team 7 Temperature Weather Calculator
+//Members: Denah Thach, Nicholas Day and Chad Derrick
+// Programmer for this file: Chad Derrick
 
 package SP23Final;
 import java.util.regex.*;
