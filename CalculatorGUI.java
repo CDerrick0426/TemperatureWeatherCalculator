@@ -1,3 +1,7 @@
+//Team 7 Temperature Weather Calculator
+//Members: Denah Thach, Nicholas Day and Chad Derrick
+// Programmer for this file: Chad Derrick
+
 package SP23Final;
 
 public class CalculatorGUI extends javax.swing.JFrame {
